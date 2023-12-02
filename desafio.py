@@ -19,7 +19,7 @@ while True:
         saldo += deposito
         extrato.append(f"R${deposito}")
     elif opcao == '2':
-        if saques <= 3:
+        if saques <= 2:
             saque = float(input("Quanto deseja sacar?\n>> "))
             if saque <= LIM_SAQUE:
                 saldo -= saque
@@ -30,7 +30,8 @@ while True:
         else:
             print("Limite de saques atingido.")
     elif opcao == '3':
-        print(extrato)
+        for extrato in extrato:
+            print(extrato)
         print(f"Saldo total: R${saldo}")
     elif opcao == '0':
         break
