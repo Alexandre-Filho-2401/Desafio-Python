@@ -131,8 +131,3 @@ def menu2():
 
 #onde de fato comeca
 menu1()
-        print(f"Saldo total: R${saldo}")
-    elif opcao == '0':
-        break
-    else:
-        print("Opção inválida. Por favor, escolha uma opção válida.")
